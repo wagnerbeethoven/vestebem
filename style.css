@@ -1,0 +1,276 @@
+:root {
+  --cor-pessego-escuro: #f29c8f;
+  --cor-pessego-claro: #f5e1e1;
+  --cor-azul-cinzento: #53687e;
+  --cor-cinza-claro: #d3d3d3;
+  --cor-menu-link: #fff;
+  --border-radius-default: 0.25rem;
+}
+/* GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.5;
+
+  background-color: #f5e1e1;
+  font-family: Arial, sans-serif;
+  color: var(--cor-azul-cinzento);
+  /* font-weight: 700; */
+  /* margin-left: 15%; */
+  /* margin-right: 15%; */
+  /* margin-top: 2% ; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 70%;
+  margin: 1rem auto;
+}
+.logo {
+  background-color: var(--cor-pessego-escuro);
+  height: 50vh;
+  border-radius: var(--border-radius-default);
+}
+.logo img {
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.menu,
+section {
+  margin: 3.125rem auto;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+
+  /* margin: 50px 5px; */
+}
+.menu a {
+  border-radius: var(--border-radius-default);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: var(--cor-menu-link);
+  background-color: var(--cor-azul-cinzento);
+  font-size: 1.5rem;
+  /* margin: 1rem .5rem; */
+  text-decoration: none;
+  transition: box-shadow 0.2s linear;
+}
+.menu a:nth-of-type(2n) {
+  margin: auto 1rem;
+}
+/*
+    .menu a:first-of-type{
+        margin-left: 0;
+    }
+    .menu a:last-of-type{
+        margin-right: 0;
+    }
+*/
+.menu a:hover {
+  box-shadow: 0.125rem 0.125rem 0.25rem 0px #53687e;
+}
+
+.section-title {
+  text-align: center;
+  margin: 2.5rem 0 1.25rem;
+  font-size: 2rem;
+}
+
+.section-confira figure {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-confira img {
+  width: 50%;
+  border-radius: var(--border-radius-default);
+}
+
+.section-confira figcaption {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+footer {
+  border-radius: var(--border-radius-default);
+
+  margin-top: 1.5rem;
+  background-color: var(--cor-azul-cinzento);
+  color: var(--cor-menu-link);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* 
+
+h3{
+    font-weight: 900;
+}
+
+.imagemInicial{
+    
+    width: 100%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+}
+.imgCentral{
+
+    width: 500px;
+    height: 500px;
+}
+.image_1, .image_2{
+    background-color:#53687E ;
+    width: 200px; 
+    height: 200px;   
+}
+
+img{
+    background-color: #53687E ;
+    width: 200px; 
+    height: 200px;
+}
+.paragrafo{
+    font-size: 20px;
+}
+
+body {
+
+
+}
+
+
+table{
+    display: inline-block
+}
+
+
+
+
+
+
+
+
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #53687E;
+	border-radius: 10px;
+
+}
+
+.produtos li:hover {
+	border-color: #F29C8F;
+}
+
+.produtos li:hover h3 {
+	font-size: 34px;
+}
+
+.produtos li:active {
+	border-color: #088C19;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+    margin-top: 10px;
+    font-weight: 900;
+
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+
+----------------formulario-------------------
+.imgemRedeSocial{
+    width: 60px;
+    height: 60px;
+    background: #F5E1E1; 
+    margin-left: 20px;
+    margin-right: 20px;   
+    }
+spam{
+    font-size: 22px;
+    font-weight: bold;
+
+}
+.redeSocial{
+        text-align: center;
+        margin: 50px 20px;
+    
+    }
+
+.contato{
+font-size: 20px;
+
+}
+.contact-info {
+    margin-bottom: 20px;
+}
+.contact-info p {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #F29C8F;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #53687E;
+}
+ */
