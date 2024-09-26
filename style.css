@@ -4,6 +4,7 @@
   --cor-azul-cinzento: #53687e;
   --cor-cinza-claro: #d3d3d3;
   --cor-menu-link: #fff;
+  --cor-bg-header:#ff9d90;
   --border-radius-default: 0.25rem;
 }
 /* GERAL */
@@ -37,14 +38,29 @@ img {
   margin: 1rem auto;
 }
 .logo {
-  background-color: var(--cor-pessego-escuro);
+  background-color: var(--cor-bg-header);
   height: 50vh;
+  padding: 1rem;
   border-radius: var(--border-radius-default);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .logo img {
+  width: auto;
+  max-height: 7rem;
+  background-position: center;
+  object-fit: contain;
+}
+.logo:before, .logo:after{
+  content: " ";
+  background-image: url(img/tira.jpg);
+  background-position: center left;
+  background-repeat: repeat-x;
+  width: 100%;
   display: block;
-  margin: 0 auto;
-  object-fit: cover;
+  height: 5vh;
+  background-size: 5vh;
 }
 .menu,
 section {
