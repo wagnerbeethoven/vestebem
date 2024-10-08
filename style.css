@@ -4,7 +4,7 @@
   --cor-azul-cinzento: #53687e;
   --cor-cinza-claro: #d3d3d3;
   --cor-menu-link: #fff;
-  --cor-bg-header:#ff9d90;
+  --cor-bg-header: #ff9d90;
   --border-radius-default: 0.25rem;
 }
 /* GERAL */
@@ -52,7 +52,8 @@ img {
   background-position: center;
   object-fit: contain;
 }
-.logo:before, .logo:after{
+.logo:before,
+.logo:after {
   content: " ";
   background-image: url(img/tira.jpg);
   background-position: center left;
@@ -87,9 +88,9 @@ section {
   margin: auto 1rem;
 }
 
-.menu .menu-item.active{
+.menu .menu-item.active {
   background: var(--cor-pessego-claro);
-  border:1px solid var(--cor-azul-cinzento);
+  border: 1px solid var(--cor-azul-cinzento);
   color: var(--cor-azul-cinzento);
 }
 /*
@@ -137,25 +138,59 @@ footer {
   text-align: center;
 }
 .produtos {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: stretch;
 }
 .produtos li {
-  display: inline-block;
-  width: 32%;
-  list-style: none;
-  margin-bottom: 1rem;
+  height: 100%;
+  padding: 1rem;
+
+  width: 150px;
 }
 
-.produtos li .produto-item{
+.produtos li .produto-item {
   background: #fff;
-
   border-radius: 0.25rem;
 }
 
-.produtos li .produto-item img {
-  object-fit: contain;
+.produtos li img,
+.produtos li .produto-img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 150px;
+  height: auto;
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .produto-item-desc {
-  padding: 1rem;
+  padding: 0.5rem;
+}
+.produto-item-desc h2,
+.produto-nome {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.produto-item-desc h2,
+.produto-nome {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.produto-cor {
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 1rem;
+  height: 1rem;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0.5);
+}
+.produto-cor-azul-escuro {
+  background-color: darkblue;
+}
+.produto-cor span {
+  opacity: 0;
 }
 /* 
 
