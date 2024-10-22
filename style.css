@@ -1,11 +1,21 @@
 :root {
+  /* cores gerais do site */
   --cor-pessego-escuro: #f29c8f;
   --cor-pessego-claro: #f5e1e1;
   --cor-azul-cinzento: #53687e;
   --cor-cinza-claro: #d3d3d3;
   --cor-menu-link: #fff;
   --cor-bg-header: #ff9d90;
+  /* bordas */
   --border-radius-default: 0.25rem;
+  /* tipografia */
+  --font-family-title: "Arima", system-ui;
+  /* cores dos produtos */
+  --darkblue: darkblue;
+  --rebeccapurple: rebeccapurple;
+
+  /* diversos */
+  --sombra-padrao: 1px 1px 2px rgba(0, 0, 0, 0.32);
 }
 /* GERAL */
 * {
@@ -143,20 +153,18 @@ footer {
   list-style: none;
   align-items: stretch;
 }
-.produtos li {
+.produto-item {
   height: 100%;
   padding: 1rem;
-
   width: 150px;
 }
 
-.produtos li .produto-item {
+.produto-container {
   background: #fff;
   border-radius: 0.25rem;
 }
 
-.produtos li img,
-.produtos li .produto-img {
+.produto-img {
   object-fit: cover;
   width: 100%;
   max-height: 150px;
@@ -164,34 +172,65 @@ footer {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  transition: transform 0.25s ease-in-out;
 }
-.produto-item-desc {
+.produto-img:hover {
+  transform: scale(1.25);
+  border-radius: 0.25rem;
+}
+.produto-desc {
   padding: 0.5rem;
 }
-.produto-item-desc h2,
+
 .produto-nome {
-  font-size: 2rem;
-  font-weight: bold;
-}
-.produto-item-desc h2,
-.produto-nome {
-  font-family: "Nanum Pen Script", cursive;
-  font-weight: 400;
+  font-family: var(--font-family-title);
+  font-weight: 500;
   font-style: normal;
+  font-size: 2rem;
 }
-.produto-cor {
-  border: 1px solid #fff;
-  border-radius: 100%;
+.produto-botao {
+  margin-top: 1rem;
+  border-radius: var(--border-radius-default);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--cor-pessego-claro);
+  display: flex;align-items: center;
+  color: #fff;
+  background-color: var(--cor-azul-cinzento);
+}
+.produto-botao:focus,
+.produto-botao:hover{
+  box-shadow: var(--sombra-padrao);
+}
+
+.produto-botao span {
+  margin-right: .5rem;
+}
+.lista-cores {
+  list-style: none;
+}
+.lista-cores li {
+  display: inline-block;
   width: 1rem;
   height: 1rem;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0.5);
 }
-.produto-cor-azul-escuro {
-  background-color: darkblue;
+
+.cor {
+  border: 1px solid #fff;
+  border-radius: 100%;
+
+  /* box-shadow:var(--sombra-padrao); */
 }
-.produto-cor span {
+.cor-darkblue {
+  background-color: var(--darkblue);
+}
+.cor-rebeccapurple {
+  background-color: var(--rebeccapurple);
+}
+.cor span {
   opacity: 0;
+  font-size: 0;
 }
+
 /* 
 
 h3{

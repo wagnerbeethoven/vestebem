@@ -10,9 +10,10 @@
     <title>Produtos / VesteBem</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -38,15 +39,23 @@
 
         <h1 class="section-title">Produtos</h1>
         <ul class="produtos">
-            <li>
-                <div class="produto-item">
-                    <img src="img/itens/bermuda-ate-o-joelho-azul-escura.jpg"
-                        alt="bermmuda de facil vestimenta até o joelho na cor azul escuro">
-                    <div class="produto-item-desc">
-                        <h2>Bermuda</h2>
-                        <p class="produto-descricao produto-cor produto-cor-azul-escuro"><span>Cor azul escuro</span>
-                        </p>
+            <li class="produtos-item">
+                <div class="produto-container">
+                    <img src="img/itens/bermuda-ate-o-joelho-azul-escura.jpg"  class="produto-img"  alt="bermmuda de facil vestimenta até o joelho na cor azul escuro">
+                    <div class="produto-desc">
+                        <h2 class="produto-nome">Bermuda</h2>
+                        <ul class="lista-cores">
+                            <li class="cor cor-darkblue"><span>Cor azul
+                                    escuro</span>
+                            </li>
+                            <li class="cor cor-rebeccapurple"><span>Cor azul
+                                    escuro</span>
+                            </li>
+                        </ul>
                         <p class="produto-preco">R$ 150,00</p>
+
+                        <button type="button" class="produto-botao">
+                            <span class="fa-solid fa-cart-shopping"></span> comprar</button>
                     </div>
                 </div>
             </li>
