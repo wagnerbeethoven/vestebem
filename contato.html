@@ -5,76 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site de roupas inclusivas">
-    <link rel="stylesheet" href="produtos.html">
-    <link rel="stylesheet" href="contato.html">
+    <title>Contato / VesteBem</title>
+    <link rel="shortcut icon" href="img/tira.jpg" type="image/x-icon">
+
     <link rel="stylesheet" href="style.css">
-    <title>VesteBem</title>
 </head>
 
-<body>
-    <header>
-        <img src="fotos/logo.jpg" alt="Logo da marca vestebem" class="logo">
-        <div class="botao">
-            <a href="index.html" class="cabecalho-link">Home</a>
-            <a href="produtos.html" class="cabecalho-link">Produtos</a>
-            <a href="contato.html" class="cabecalho-link">Contato</a>
-        </div>
-    </header>
-    <!-- cabeçalho igual em todas as pag-->
+<body class="contato">
+    <div class="container">
+        <header>
+            <figure class="logo">
+                <img src="img/logo.jpg"
+                    alt="Logo da marca formado por um retângulo pêssego, com duas faixas compostas por ícones da acessibilidade organizados um ao lado do outro, as faixas estão na parte superior e inferior. No centro o texto: VesteBem, na cor azul e Moda inclusiva na cor branca. No lugar do O na palavra Moda, está representado por um ícone azul de uma pessoa utilizando uma cadeira de rodas."
+                    title="VesteBem">
+            </figure>
 
-    <h2>Estamos Aqui para Ajudar!</h2>
+            <nav class="menu">
+                <a class="menu-item" href="index.html">Home</a>
+                <a class="menu-item" href="produtos.html">Produtos</a>
+                <a class="menu-item active" href="#">Contato</a>
+            </nav>
+        </header>
+
+        <h1>Contato</h1>
+        <p>Estamos Aqui para Ajudar!</p>
+
+        <main>
+            <form action="#" class="formulario" method="post">
+                <fieldset>
+                    <legend>Informações do cliente</legend>
+                    <div class="form-field-container">
+                        <label class="form-label" for="nomeCliente">Nome:</label>
+                        <input class="form-field" type="text" id="nomeCliente" name="name" placeholder="Digite seu nome"
+                            required>
+                    </div>
+                    <div class="form-field-container">
+
+                        <label class="form-label" for="email">E-mail:</label>
+                        <input class="form-field" type="email" id="email" name="email" placeholder="seu-email@email.com"
+                            required>
+                    </div>
+                    <div class="form-field-container">
+
+                        <label for="Telefone">Telefone</label>
+                        <input type="tel" id="Telefone">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informação da compra</legend>
+                    <div class="form-field-container">
+
+                        <label for="produtoLista">Selecione um produto</label>
+                        <select name="produtoLista" id="produtoLista">
+                            <option value="" selected>Escolha um produto</option>
+                            <option value="produtoLista1">produtoLista1</option>
+                            <option value="produtoLista2">produtoLista2</option>
+                            <option value="produtoLista3">produtoLista3</option>
+                            <option value="produtoLista4">produtoLista4</option>
+
+                        </select>
+                    </div>
+                    <div class="form-field-container"> <label for="DataCompra">Data da compra</label>
+                        <input type="date" id="DataCompra">
+                    </div>
+                </fieldset>
 
 
+                <div class="form-field-container"> <label class="form-label" for="message">Mensagem:</label>
+                    <textarea class="form-field" id="message" name="message" rows="4" placeholder="Digite sua Mensagem"
+                        required></textarea>
+                </div>
+                <div class="form-field-container"><label for="Termos">
+                        <input type="checkbox" id="Termos" required> Confirmo que as ~informação são veridicas. Acesse
+                        os <a href="#">termos do serviço</a>
+                    </label>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+
+            <div class="endereco">
+                <h2>Informações de Contato</h2>
+                <div class="contact-info">
+
+                    <p>
+                        <spam>Endereço : </spam>
+                    </p>
+                    <p class="contato">Rua Exemplo, 123</p>
+                    <p class="contato">Bairro Exemplo, Cidade - UF</p>
+                    <p class="contato">CEP: 00000-000</p>
+                    <p class="contato">Telefone: (11) 1234-5678</p>
+                    <p class="contato">Horário de Atendimento: Segunda a Sexta, das 9h às 18h</p>
+                </div>
+
+                <div class="redeSocial">
+                    <a href="http://facebook.com"><img src="fotos/facebook.png" class="imgemRedeSocial"
+                            alt="link o facebook"></a>
+                    <a href="http://twitter.com"><img src="fotos/x-twite.png" class="imgemRedeSocial alt=" link do x ,
+                            ex twitter"></a>
+                    <a href="http://instagram.com"><img src="fotos/Instagram_icon.png.webp" class="imgemRedeSocial"
+                            alt="link do instagram"></a>
+
+                </div>
+            </div>
+        </main>
 
 
-
-
-
-
-
-
-
-    <h2>Contato</h2>
-    <form action="#" method="post">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="seu-email@email.com" required>
-
-        <label for="message">Mensagem:</label>
-        <textarea id="message" name="message" rows="4" placeholder="Digite sua Mensagem" required></textarea>
-
-        <input type="submit" value="Enviar">
-    </form>
-
-    <h2>Informações de Contato</h2>
-    <div class="contact-info">
-
-        <p>
-            <spam>Endereço : </spam>
-        </p>
-        <p class="contato">Rua Exemplo, 123</p>
-        <p class="contato">Bairro Exemplo, Cidade - UF</p>
-        <p class="contato">CEP: 00000-000</p>
-        <p class="contato">Telefone: (11) 1234-5678</p>
-        <p class="contato">Horário de Atendimento: Segunda a Sexta, das 9h às 18h</p>
     </div>
-
-    <div class="redeSocial">
-        <a href="http://facebook.com"><img src="fotos/facebook.png" class="imgemRedeSocial" alt="link o facebook"></a>
-        <a href="http://twitter.com"><img src="fotos/x-twite.png" class="imgemRedeSocial alt="link do x , ex twitter"></a>
-        <a href="http://instagram.com"><img src="fotos/Instagram_icon.png.webp" class="imgemRedeSocial" alt="link do instagram"></a>
-
-    </div>
+</body>
 
 
 
-
-
-    <!--igual em todas as pag-->
-    <footer>
-        <h3> © Desenvolvido por alunas da Aceleradora Inclusiva 2024</h3>
-    </footer>
 
 </html>
