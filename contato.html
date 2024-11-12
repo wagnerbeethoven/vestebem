@@ -7,7 +7,7 @@
     <meta name="description" content="Site de roupas inclusivas">
     <title>Contato / VesteBem</title>
     <link rel="shortcut icon" href="img/tira.jpg" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,10 +32,12 @@
 
         <main>
             <form action="#" class="formulario" method="post">
+                <!-- Informações do cliente -->
                 <fieldset>
                     <legend>Informações do cliente</legend>
                     <div class="form-field-container">
                         <label class="form-label" for="nomeCliente">Nome:</label>
+
                         <input class="form-field" type="text" id="nomeCliente" name="name" placeholder="Digite seu nome"
                             required>
                     </div>
@@ -48,16 +50,16 @@
                     <div class="form-field-container">
 
                         <label for="Telefone">Telefone</label>
-                        <input type="tel" id="Telefone">
+                        <input class="form-field" placeholder="DDD + telefone" type="tel" id="Telefone">
                     </div>
                 </fieldset>
-
+                <!-- Informação da compra -->
                 <fieldset>
                     <legend>Informação da compra</legend>
                     <div class="form-field-container">
 
-                        <label for="produtoLista">Selecione um produto</label>
-                        <select name="produtoLista" id="produtoLista">
+                        <label for="produtoLista">Qual produto</label>
+                        <select class="form-field" name="produtoLista" id="produtoLista">
                             <option value="" selected>Escolha um produto</option>
                             <option value="produtoLista1">produtoLista1</option>
                             <option value="produtoLista2">produtoLista2</option>
@@ -67,16 +69,18 @@
                         </select>
                     </div>
                     <div class="form-field-container"> <label for="DataCompra">Data da compra</label>
-                        <input type="date" id="DataCompra">
+                        <input type="date" class="form-field" id="DataCompra">
                     </div>
                 </fieldset>
 
 
-                <div class="form-field-container"> <label class="form-label" for="message">Mensagem:</label>
-                    <textarea class="form-field" id="message" name="message" rows="4" placeholder="Digite sua Mensagem"
+                <div class="form-field-container">
+                    <label class="form-label" for="message">Mensagem:</label>
+                    <textarea class="form-field" id="message" name="message" placeholder="Digite sua Mensagem"
                         required></textarea>
                 </div>
-                <div class="form-field-container"><label for="Termos">
+                <div class="form-field-footer">
+                    <label for="Termos">
                         <input type="checkbox" id="Termos" required> Confirmo que as ~informação são veridicas. Acesse
                         os <a href="#">termos do serviço</a>
                     </label>
@@ -87,31 +91,41 @@
             <div class="endereco">
                 <h2>Informações de Contato</h2>
                 <div class="contact-info">
-
+                    <h3>Endereço</h3>
                     <p>
-                        <spam>Endereço : </spam>
+                        Av. Min. Marcos Freire, 4381 <br>Casa Caiada, Olinda - PE, <br>CEP: 53040-010
                     </p>
-                    <p class="contato">Rua Exemplo, 123</p>
-                    <p class="contato">Bairro Exemplo, Cidade - UF</p>
-                    <p class="contato">CEP: 00000-000</p>
-                    <p class="contato">Telefone: (11) 1234-5678</p>
-                    <p class="contato">Horário de Atendimento: Segunda a Sexta, das 9h às 18h</p>
+
+                    <iframe class="maps"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4435.120607045309!2d-34.83714367324978!3d-7.973797379188287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab3d7030db1bdb%3A0x8aa7fc41a7c1ab64!2sGarota%20do%20Beira%20mar!5e0!3m2!1spt-BR!2sbr!4v1731429728462!5m2!1spt-BR!2sbr"></iframe>
+
+                    <h3>Funcionamento</h3>
+                    <ul>
+
+                        <li>Telefone: 08130112911</li>
+                        <li>Horário de Atendimento: Segunda a Sexta, das 9h às 18h</li>
+                    </ul>
+
+
+
                 </div>
 
                 <div class="redeSocial">
-                    <a href="http://facebook.com"><img src="fotos/facebook.png" class="imgemRedeSocial"
-                            alt="link o facebook"></a>
-                    <a href="http://twitter.com"><img src="fotos/x-twite.png" class="imgemRedeSocial alt=" link do x ,
-                            ex twitter"></a>
-                    <a href="http://instagram.com"><img src="fotos/Instagram_icon.png.webp" class="imgemRedeSocial"
-                            alt="link do instagram"></a>
+                    <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
 
                 </div>
             </div>
         </main>
 
 
+        <footer>
+            <p>&copy; Desenvolvido por alunas da Aceleradora Inclusiva 2024</p>
+        </footer>
     </div>
+
+
 </body>
 
 
